@@ -56,7 +56,9 @@ Mixed reality content creation is a wide open market. The 3D mapping industry is
 
 From there, our goal is for City Champ will be to bootstrap a much more ambitious moonshot 🚀 successor product, **MeshMap**: a Solana DApp for scanning, geotagging, minting, and mapping a decentralized 3D mesh of the world.
 
-Urban AR games and experiences like City Champ that integrate with MeshMap would function as a loosely connected network of AR creator platforms, facilitating an explosion in growth of AR content. Furthermore, companies and governments could use MeshMap for large projects in urban planning, transportation, construction, disaster prevention, and other cases where spatial data is valuable.
+Urban AR games and experiences like City Champ that integrate with MeshMap would function as a loosely connected network of AR creator platforms, facilitating an explosion in growth of AR content.
+
+Furthermore, companies and governments could use MeshMap for large projects in urban planning, transportation, construction, disaster prevention, and other cases where spatial data is valuable.
 
 ![A digital rendering showing a city street through three lens of physical reality, AR, and VR.](https://github.com/SpectraStudios/.github/blob/main/spectra_3views.webp)
 
