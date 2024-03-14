@@ -70,3 +70,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+/[Aa]ssets/_CityChamp/_3rdParty*
+/[Aa]ssets/Behavior Designer/
+/[Aa]ssets/Behavior Designer Movement/
+/[Aa]ssets/Oculus/
+/[Aa]ssets/Samples/
+/[Aa]ssets/Resources/
+/[Aa]ssets/Gizmos/
+/[Aa]ssets/TextMesh Pro/
+/[Aa]ssets/_CityChamp/Art/_CoreAssets/
