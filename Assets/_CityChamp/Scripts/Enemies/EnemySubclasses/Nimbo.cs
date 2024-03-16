@@ -1,7 +1,5 @@
 // Nimbo is a class of enemy, which is a poolable object
-// Edited on 7 March 2024
 
-using System;
 using UnityEngine;
 
 namespace SpectraStudios.CityChamp.Enemies

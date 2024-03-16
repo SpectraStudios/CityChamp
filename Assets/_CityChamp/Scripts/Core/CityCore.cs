@@ -7,9 +7,9 @@ namespace SpectraStudios.CityChamp
 {
     public class CityCore : MonoBehaviour, IDamageable
     {
-        public static event Action<int> OnCityCoreHealthChanged;
-        public static event Action<int> OnCityCoreMaxHealthIncreased;
-        public static event Action OnCityCoreDied;
+        public static event Action<int> OnHealthChanged;
+        public static event Action<int> OnMaxHealthIncreased;
+        public static event Action OnDied;
 
         private int _maxHealth = 100;
 
@@ -39,17 +39,17 @@ namespace SpectraStudios.CityChamp
         public void SetToMaxHealth()
         {
             Health = _maxHealth;
-            OnCityCoreHealthChanged?.Invoke(Health);
+            OnHealthChanged?.Invoke(Health);
         }
 
         public void IncreaseMaxHealth(int amount)
         {
             _maxHealth += amount;
-            OnCityCoreMaxHealthIncreased?.Invoke(_maxHealth);
+            OnMaxHealthIncreased?.Invoke(_maxHealth);
 
             // Increasing max health adds that amount to current health too
             Health += amount;
-            OnCityCoreHealthChanged?.Invoke(Health);
+            OnHealthChanged?.Invoke(Health);
         }
 
         public void TakeDamage(int damageAmount)
@@ -62,7 +62,7 @@ namespace SpectraStudios.CityChamp
             }
             else
             {
-                OnCityCoreHealthChanged?.Invoke(Health);
+                OnHealthChanged?.Invoke(Health);
             }
         }
 
@@ -70,10 +70,12 @@ namespace SpectraStudios.CityChamp
         {
             // Reset health to 0 in case the city got hit at the end
             Health = 0;
-            OnCityCoreHealthChanged?.Invoke(Health);
+            OnHealthChanged?.Invoke(Health);
 
             // The wave is failed
-            OnCityCoreDied?.Invoke();
+            OnDied?.Invoke();
+
+            Debug.LogWarning("City died!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         }
     }
 }

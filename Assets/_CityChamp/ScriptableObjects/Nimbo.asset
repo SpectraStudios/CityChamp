@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6489ce37e6fd5934b9acfc3637f6d175, type: 3}
   m_Name: Nimbo
   m_EditorClassIdentifier: 
-  Health: 100
+  Health: 150
   ReformPoints: 750
   DeathAnimTime: 4
   Speed: 0.75

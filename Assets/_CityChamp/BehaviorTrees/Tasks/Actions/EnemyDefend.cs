@@ -1,5 +1,3 @@
-// Edited on 7 March 2024
-
 using UnityEngine;
 using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;

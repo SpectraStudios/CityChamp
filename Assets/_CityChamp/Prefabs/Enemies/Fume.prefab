@@ -11,10 +11,12 @@ GameObject:
   - component: {fileID: 2937613480334553818}
   - component: {fileID: 6966141826628154099}
   - component: {fileID: 6966141826628154098}
+  - component: {fileID: 6445082427226698254}
+  - component: {fileID: -8244432990380547830}
+  - component: {fileID: 6920121791488106768}
+  - component: {fileID: 5386664630484008374}
   - component: {fileID: 1645374905}
   - component: {fileID: 2853882051229602739}
-  - component: {fileID: 5386664630484008374}
-  - component: {fileID: 6920121791488106768}
   m_Layer: 0
   m_Name: Fume
   m_TagString: Enemy
@@ -88,6 +90,83 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6, y: 0.9, z: 0.46}
   m_Center: {x: 0, y: 0.7, z: -0.16}
+--- !u!114 &6445082427226698254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635119071022803013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 6966141826628154098}
+--- !u!114 &-8244432990380547830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635119071022803013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _surface: {fileID: 6445082427226698254}
+  _selectSurface: {fileID: 0}
+  _movementProvider: {fileID: 0}
+  _tiebreakerScore: 0
+--- !u!114 &6920121791488106768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635119071022803013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79068b3049a070a4aa4de934408ee790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _agent: {fileID: 5386664630484008374}
+  _animator: {fileID: 1292268464572367095}
+  _enemyScriptableObject: {fileID: 11400000, guid: 21aa2e006ece37542b7adc074b5b8e33,
+    type: 2}
+  EnemyHealthSlider: {fileID: 3190846510743751933}
+  _deathParticles:
+  - {fileID: 222962495603159669}
+  - {fileID: 223070158201328745}
+  IsDefending: 0
+--- !u!195 &5386664630484008374
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635119071022803013}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &1645374905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,49 +303,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!195 &5386664630484008374
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2635119071022803013}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &6920121791488106768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2635119071022803013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79068b3049a070a4aa4de934408ee790, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _agent: {fileID: 5386664630484008374}
-  _animator: {fileID: 1292268464572367095}
-  _enemyScriptableObject: {fileID: 11400000, guid: 21aa2e006ece37542b7adc074b5b8e33,
-    type: 2}
-  EnemyHealthSlider: {fileID: 3190846510743751933}
-  _deathParticles:
-  - {fileID: 222962495603159669}
-  - {fileID: 223070158201328745}
-  IsDefending: 0
 --- !u!1001 &801819251109946886
 PrefabInstance:
   m_ObjectHideFlags: 0

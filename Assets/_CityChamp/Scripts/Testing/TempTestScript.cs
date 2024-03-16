@@ -9,15 +9,17 @@ namespace SpectraStudios.CityChamp
     {
 
         public EnemySpawner EnemySpawnerScript;
+        [SerializeField] private float initialSpawnSecs = 3f;
+        [SerializeField] private float repeatSpawnSecs = 4f;
 
         private void Start()
         {
-            InvokeRepeating("SpawnAnEnemy", 3f, 3f);
+            InvokeRepeating("SpawnAnEnemy", initialSpawnSecs, repeatSpawnSecs);
         }
 
         private void SpawnAnEnemy()
         {
-            int enemy = Random.Range(0, 1);
+            int enemy = Random.Range(0, 2);
 
             switch (enemy)
             {

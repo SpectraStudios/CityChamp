@@ -8,9 +8,9 @@ namespace SpectraStudios.CityChamp
 {
     public class Player : MonoBehaviour, IDamageable
     {
-        public static event Action<int> OnPlayerHealthChanged;
-        public static event Action<int> OnPlayerMaxHealthIncreased;
-        public static event Action OnPlayerDied;
+        public static event Action<int> OnHealthChanged;
+        public static event Action<int> OnMaxHealthIncreased;
+        public static event Action OnDied;
 
         [HideInInspector] public int PlayerHitCounter = 0;
 
@@ -42,17 +42,17 @@ namespace SpectraStudios.CityChamp
         public void SetToMaxHealth()
         {
             Health = _maxHealth;
-            OnPlayerHealthChanged?.Invoke(Health);
+            OnHealthChanged?.Invoke(Health);
         }
 
         public void IncreaseMaxHealth(int amount)
         {
             _maxHealth += amount;
-            OnPlayerMaxHealthIncreased?.Invoke(_maxHealth);
+            OnMaxHealthIncreased?.Invoke(_maxHealth);
 
             // Increasing max health adds that amount to current health too
             Health += amount;
-            OnPlayerHealthChanged?.Invoke(Health);
+            OnHealthChanged?.Invoke(Health);
         }
 
         public void ResetPlayerHitCounter()
@@ -77,7 +77,7 @@ namespace SpectraStudios.CityChamp
             }
             else
             {
-                OnPlayerHealthChanged?.Invoke(Health);
+                OnHealthChanged?.Invoke(Health);
             }
         }
 
@@ -85,12 +85,12 @@ namespace SpectraStudios.CityChamp
         {
             // Reset health to 0 in case the player got hit at the end
             Health = 0;
-            OnPlayerHealthChanged?.Invoke(Health);
+            OnHealthChanged?.Invoke(Health);
 
             // Trigger respawn
-            OnPlayerDied?.Invoke();
+            OnDied?.Invoke();
+
+            Debug.LogWarning("Player died!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         }
-
-
     }
 }
