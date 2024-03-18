@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   ReformPoints: 500
-  DeathAnimTime: 4
+  DeathAnimTime: 2.659333
   Speed: 1
   AngularSpeed: 120
   Acceleration: 8

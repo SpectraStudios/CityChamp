@@ -13,15 +13,15 @@ namespace SpectraStudios.CityChamp
 
         public OVRHand Hand;
         public OVRHand.HandFinger Finger;
-        public HandPointerPose PointerPose;
+        public Transform PointerPose;
 
+        [SerializeField] private Transform _start;
         private Vector3 _destination;
-        private float _projectileSpeed = 8;
-        private float _impactForce = 20;
-        private int _damage = 40;
+        private float _projectileSpeed = 12;
+        
 
         [SerializeField] private bool _canBlast = true;
-        private float _cooldownTime = 0.5f;
+        private float _cooldownTime = 0.6f;
 
         [SerializeField] private Projectile _projectilePrefab;
         [SerializeField] private int _numProjectiles = 5;
@@ -66,54 +66,22 @@ namespace SpectraStudios.CityChamp
         {
             if (_canBlast)
             {
-                Debug.LogWarning("shoooooting");
-
                 RaycastHit hit;
-                if (Physics.Raycast(PointerPose.transform.position, transform.forward, out hit))
+                if (Physics.Raycast(PointerPose.position, transform.forward, out hit))
                 {
-                    Debug.LogWarning("hiiiiiiiiiiiiiiiiiiiiiiiiit");
                     _destination = hit.point;
-
-                    IDamageable damageable = hit.transform.GetComponent<IDamageable>();
-
-                    if (damageable == null)
-                    {
-                        damageable = hit.transform.GetComponentInParent<IDamageable>();
-                    }
-
-                    if (damageable == null)
-                    {
-                        damageable = hit.transform.GetComponentInChildren<IDamageable>();
-                    }
-                    Debug.LogWarning(damageable);
-
-                    if (damageable != null)
-                    {
-                        Debug.LogWarning("damageableeeeeeeeeeeeeeeee");
-
-                        if (hit.transform.tag != "Player" && hit.transform.tag != "CityCore")
-                        {
-                            if (hit.rigidbody != null)
-                            {
-                                hit.rigidbody.AddForce(-hit.normal * _impactForce);
-                            }
-
-                            damageable.TakeDamage(_damage);
-                        }
-                    }
                 }
                 else
                 {
-                    Ray r = new Ray(PointerPose.transform.position, Vector3.forward + Vector3.up);
+                    Ray r = new Ray(PointerPose.position, transform.forward);
                     _destination = r.GetPoint(100);
                 }
 
                 _instance = _projectilePool.GetObject();
-
                 if (_instance != null)
                 {
-                    _instance.transform.SetPositionAndRotation(PointerPose.transform.position, PointerPose.transform.rotation);
-                    _instance.GetComponent<Rigidbody>().velocity = (_destination - PointerPose.transform.position).normalized * _projectileSpeed;
+                    _instance.transform.SetPositionAndRotation(_start.position, _start.rotation);
+                    _instance.GetComponent<Rigidbody>().velocity = _start.transform.forward * _projectileSpeed;
                 }
 
                 _canBlast = false;

@@ -4,7 +4,7 @@ namespace SpectraStudios.CityChamp
 {
     public class AutoDestroyPooledObject : PooledObject
     {
-        public float AutoDestroyTime = 5f;
+        public virtual float AutoDestroyTime { get { return 5f; } }
 
         protected const string DisableMethodName = "Disable";
 
