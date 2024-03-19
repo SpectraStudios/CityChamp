@@ -1,7 +1,5 @@
 using System;
 using UnityEngine;
-//using SpectraStudios.CityChamp.GameStates;
-//using SpectraStudios.Citychamp.Reforms;
 
 namespace SpectraStudios.CityChamp
 {
@@ -15,20 +13,16 @@ namespace SpectraStudios.CityChamp
 
         public int Health { get; set; }
 
+        [SerializeField] private AudioSource[] _soundsToPlayOnDamage;
+        [SerializeField] private AudioSource[] _soundsToPlayOnDeath;
+
+        [SerializeField] private ParticleSystem[] _particlesToPlayOnDamage;
+        [SerializeField] private ParticleSystem[] _particlesToStopOnDeath;
+        [SerializeField] private ParticleSystem[] _particlesToPlayOnDeath;
+
         private void Awake()
         {
-            //CombatState.OnWaveEnded += SetToMaxHealth;
-            //CombatState.OnWaveFailed += SetToMaxHealth;
-            //Reform.OnReformPassedIncreaseHealth += IncreaseMaxHealth;
-
             Health = _maxHealth;
-        }
-
-        private void OnDestroy()
-        {
-            //CombatState.OnWaveEnded -= SetToMaxHealth;
-            //CombatState.OnWaveFailed -= SetToMaxHealth;
-            //Reform.OnReformPassedIncreaseHealth -= IncreaseMaxHealth;
         }
 
         private void Start()
@@ -63,6 +57,49 @@ namespace SpectraStudios.CityChamp
             else
             {
                 OnHealthChanged?.Invoke(Health);
+
+                PlaySoundsOnDamage();
+                PlayParticlesOnDamage();
+            }
+        }
+
+        public virtual void PlaySoundsOnDamage()
+        {
+            for (int i = 0; i < _soundsToPlayOnDamage.Length; i++)
+            {
+                _soundsToPlayOnDamage[i].Play();
+            }
+        }
+
+        public virtual void PlaySoundsOnDeath()
+        {
+            for (int i = 0; i < _soundsToPlayOnDeath.Length; i++)
+            {
+                _soundsToPlayOnDeath[i].Play();
+            }
+        }
+
+        public virtual void PlayParticlesOnDamage()
+        {
+            for (int i = 0; i < _particlesToPlayOnDamage.Length; i++)
+            {
+                _particlesToPlayOnDamage[i].Play();
+            }
+        }
+
+        public virtual void StopParticlesOnDeath()
+        {
+            for (int i = 0; i < _particlesToStopOnDeath.Length; i++)
+            {
+                _particlesToStopOnDeath[i].Stop();
+            }
+        }
+
+        public virtual void PlayParticlesOnDeath()
+        {
+            for (int i = 0; i < _particlesToPlayOnDeath.Length; i++)
+            {
+                _particlesToPlayOnDeath[i].Play();
             }
         }
 
@@ -72,10 +109,12 @@ namespace SpectraStudios.CityChamp
             Health = 0;
             OnHealthChanged?.Invoke(Health);
 
-            // The wave is failed
-            OnDied?.Invoke();
+            PlaySoundsOnDeath();
+            StopParticlesOnDeath();
+            PlayParticlesOnDeath();
 
-            Debug.LogWarning("City died!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            // The level is failed
+            OnDied?.Invoke();
         }
     }
 }

@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 150
   ReformPoints: 750
   DeathAnimTime: 2.659333
-  Speed: 0.75
+  Speed: 0.9
   AngularSpeed: 80
   Acceleration: 3
   StoppingDistance: 1
