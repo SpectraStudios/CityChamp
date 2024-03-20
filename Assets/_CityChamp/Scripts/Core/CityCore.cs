@@ -65,41 +65,56 @@ namespace SpectraStudios.CityChamp
 
         public virtual void PlaySoundsOnDamage()
         {
-            for (int i = 0; i < _soundsToPlayOnDamage.Length; i++)
+            if (_soundsToPlayOnDamage != null)
             {
-                _soundsToPlayOnDamage[i].Play();
+                for (int i = 0; i < _soundsToPlayOnDamage.Length; i++)
+                {
+                    _soundsToPlayOnDamage[i].Play();
+                }
             }
         }
 
         public virtual void PlaySoundsOnDeath()
         {
-            for (int i = 0; i < _soundsToPlayOnDeath.Length; i++)
+            if (_soundsToPlayOnDeath != null)
             {
-                _soundsToPlayOnDeath[i].Play();
+                for (int i = 0; i < _soundsToPlayOnDeath.Length; i++)
+                {
+                    _soundsToPlayOnDeath[i].Play();
+                }
             }
         }
 
         public virtual void PlayParticlesOnDamage()
         {
-            for (int i = 0; i < _particlesToPlayOnDamage.Length; i++)
+            if (_particlesToPlayOnDamage != null)
             {
-                _particlesToPlayOnDamage[i].Play();
+                for (int i = 0; i < _particlesToPlayOnDamage.Length; i++)
+                {
+                    _particlesToPlayOnDamage[i].Play();
+                }
             }
         }
 
         public virtual void StopParticlesOnDeath()
         {
-            for (int i = 0; i < _particlesToStopOnDeath.Length; i++)
+            if (_particlesToStopOnDeath != null)
             {
-                _particlesToStopOnDeath[i].Stop();
+                for (int i = 0; i < _particlesToStopOnDeath.Length; i++)
+                {
+                    _particlesToStopOnDeath[i].Stop();
+                }
             }
         }
 
         public virtual void PlayParticlesOnDeath()
         {
-            for (int i = 0; i < _particlesToPlayOnDeath.Length; i++)
+            if (_particlesToPlayOnDeath != null)
             {
-                _particlesToPlayOnDeath[i].Play();
+                for (int i = 0; i < _particlesToPlayOnDeath.Length; i++)
+                {
+                    _particlesToPlayOnDeath[i].Play();
+                }
             }
         }
 

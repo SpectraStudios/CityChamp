@@ -16,7 +16,14 @@ namespace SpectraStudios.CityChamp.Enemies
         [SerializeField] private Animator _animator;
         [SerializeField] private EnemyScriptableObject _enemyScriptableObject;
         public Slider EnemyHealthSlider;
-        [SerializeField] private ParticleSystem[] _deathParticles;
+
+        [SerializeField] private ParticleSystem[] _particlesToPlayForAttack1;
+        [SerializeField] private ParticleSystem[] _particlesToPlayForAttack2;
+        [SerializeField] private ParticleSystem[] _particlesToPlayForDefend;
+        [SerializeField] private ParticleSystem[] _particlesToPlayOnDamage;
+        [SerializeField] private ParticleSystem[] _particlesToPlayOnStun;
+        [SerializeField] private ParticleSystem[] _particlesToStopOnDeath;
+        [SerializeField] private ParticleSystem[] _particlesToPlayOnDeath;
 
         public int Health { get; set; }
         private int MaxHealth;
@@ -89,6 +96,8 @@ namespace SpectraStudios.CityChamp.Enemies
                 {
                     Health -= damageAmount;
                     UpdateHealthUI(Health);
+
+                    PlayParticlesOnDamage();
                 }
             }
         }
@@ -106,12 +115,37 @@ namespace SpectraStudios.CityChamp.Enemies
             EnemyHealthSlider.value = currentHealth;
         }
 
-        public virtual void PlayParticles()
+        public virtual void PlayParticlesOnDamage()
         {
-            for (int i = 0; i < _deathParticles.Length; i++)
+            if (_particlesToPlayOnDamage != null)
             {
-                _deathParticles[i].Play();
+                for (int i = 0; i < _particlesToPlayOnDamage.Length; i++)
+                {
+                    _particlesToPlayOnDamage[i].Play();
+                }
             }
+        }
+
+        public virtual void StopParticlesOnDeath()
+        {
+            if (_particlesToStopOnDeath != null)
+            {
+                for (int i = 0; i < _particlesToStopOnDeath.Length; i++)
+                {
+                    _particlesToStopOnDeath[i].Stop();
+                }
+            }
+        }
+
+        public virtual void PlayParticlesOnDeath()
+        {
+            if (_particlesToPlayOnDeath != null)
+            {
+                for (int i = 0; i < _particlesToPlayOnDeath.Length; i++)
+                {
+                    _particlesToPlayOnDeath[i].Play();
+                }
+            }       
         }
 
         public virtual void Death()
@@ -120,7 +154,8 @@ namespace SpectraStudios.CityChamp.Enemies
 
             EnemyHealthSlider.gameObject.SetActive(value: false);
 
-            PlayParticles();
+            StopParticlesOnDeath();
+            PlayParticlesOnDeath();
 
             _animator.SetBool("isDying", true);
 
