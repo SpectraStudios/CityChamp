@@ -23,16 +23,16 @@ namespace SpectraStudios.CityChamp.UI
 
         private void Awake()
         {
-            Player.OnHealthChanged += UpdatePlayerHealthUI;
-            Player.OnMaxHealthIncreased += SetMaxPlayerHealthUI;
+            PlayerCombat.OnHealthChanged += UpdatePlayerHealthUI;
+            PlayerCombat.OnMaxHealthIncreased += SetMaxPlayerHealthUI;
             CityCore.OnHealthChanged += UpdateCityCoreHealthUI;
             CityCore.OnMaxHealthIncreased += SetMaxCityCoreHealthUI;
         }
 
         private void OnDestroy()
         {
-            Player.OnHealthChanged -= UpdatePlayerHealthUI;
-            Player.OnMaxHealthIncreased -= SetMaxPlayerHealthUI;
+            PlayerCombat.OnHealthChanged -= UpdatePlayerHealthUI;
+            PlayerCombat.OnMaxHealthIncreased -= SetMaxPlayerHealthUI;
             CityCore.OnHealthChanged -= UpdateCityCoreHealthUI;
             CityCore.OnMaxHealthIncreased -= SetMaxCityCoreHealthUI;
         }

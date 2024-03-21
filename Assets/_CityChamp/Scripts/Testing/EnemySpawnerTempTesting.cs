@@ -5,7 +5,7 @@ using SpectraStudios.CityChamp.Enemies;
 
 namespace SpectraStudios.CityChamp
 {
-    public class TempTestScript : MonoBehaviour
+    public class EnemySpawnerTempTesting : MonoBehaviour
     {
 
         public EnemySpawner EnemySpawnerScript;

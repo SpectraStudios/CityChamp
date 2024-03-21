@@ -13,10 +13,8 @@ namespace SpectraStudios.CityChamp
 
         public OVRHand Hand;
         public OVRHand.HandFinger Finger;
-        public Transform PointerPose;
 
         [SerializeField] private Transform _start;
-        private Vector3 _destination;
         private float _projectileSpeed = 12;
         
 
@@ -66,18 +64,8 @@ namespace SpectraStudios.CityChamp
         {
             if (_canBlast)
             {
-                RaycastHit hit;
-                if (Physics.Raycast(PointerPose.position, transform.forward, out hit))
-                {
-                    _destination = hit.point;
-                }
-                else
-                {
-                    Ray r = new Ray(PointerPose.position, transform.forward);
-                    _destination = r.GetPoint(100);
-                }
-
                 _instance = _projectilePool.GetObject();
+
                 if (_instance != null)
                 {
                     _instance.transform.SetPositionAndRotation(_start.position, _start.rotation);

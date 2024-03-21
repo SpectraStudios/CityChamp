@@ -2,11 +2,10 @@
 
 using System;
 using UnityEngine;
-//using SpectraStudios.CityChamp.GameStates;
 
 namespace SpectraStudios.CityChamp
 {
-    public class Player : MonoBehaviour, IDamageable
+    public class PlayerCombat : MonoBehaviour, IDamageable
     {
         public static event Action<int> OnHealthChanged;
         public static event Action<int> OnMaxHealthIncreased;
@@ -20,18 +19,7 @@ namespace SpectraStudios.CityChamp
 
         private void Awake()
         {
-            //CombatState.OnWaveEnded += SetToMaxHealth;
-            //CombatState.OnWaveFailed += SetToMaxHealth;
-            //CombatState.OnWaveStarted += ResetPlayerHitCounter;
-
             Health = _maxHealth;
-        }
-
-        private void OnDestroy()
-        {
-            //CombatState.OnWaveEnded -= SetToMaxHealth;
-            //CombatState.OnWaveFailed -= SetToMaxHealth;
-            //CombatState.OnWaveStarted -= ResetPlayerHitCounter;
         }
 
         private void Start()
@@ -89,8 +77,6 @@ namespace SpectraStudios.CityChamp
 
             // Trigger respawn
             OnDied?.Invoke();
-
-            Debug.LogWarning("Player died!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         }
     }
 }

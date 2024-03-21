@@ -14,7 +14,7 @@ namespace SpectraStudios.CityChamp
 
         public override TaskStatus OnUpdate()
         {
-            PlayerHealth.Value = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Health;
+            PlayerHealth.Value = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>().Health;
 
             if (PlayerHealth == null)
             {
