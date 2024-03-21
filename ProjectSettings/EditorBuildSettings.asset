@@ -6,8 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_CityChamp/Scenes/CityChamp_testing.unity
+    path: Assets/_CityChamp/Scenes/PersistentGameplay.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/_CityChamp/Scenes/GameModeMenu.unity
+    guid: e64323abee6e5d4478f87200bdf78db3
+  - enabled: 1
+    path: Assets/_CityChamp/Scenes/MainMenu.unity
+    guid: 81f8fd5fe1ee1464cbb3a08fbd52a22c
+  - enabled: 1
+    path: Assets/_CityChamp/Scenes/InputsMenu.unity
+    guid: 53d13201ff510c046821d11fdc0177a3
+  - enabled: 1
+    path: Assets/_CityChamp/Scenes/LoadingScreen.unity
+    guid: 2ac2449e5266d0341945049e3ce2e4e2
+  - enabled: 1
+    path: Assets/_CityChamp/Scenes/WorldMap.unity
+    guid: d23986dac131b874ebbb291318f04e87
+  - enabled: 1
+    path: Assets/_CityChamp/Scenes/Level1.unity
+    guid: b3cb6d1a4945e344db0653806ee2f9ea
+  - enabled: 1
+    path: Assets/_CityChamp/Scenes/Level2.unity
+    guid: fe5651c186e5bba40b49288e02bbebb4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a1515729e2c99a547b9dfc3807b4e2a1,
       type: 2}

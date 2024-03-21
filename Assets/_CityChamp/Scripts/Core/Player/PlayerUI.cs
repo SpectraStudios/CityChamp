@@ -2,39 +2,30 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Assets.OVR.Scripts;
 
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
-namespace SpectraStudios.CityChamp.UI
+namespace SpectraStudios.CityChamp
 {
-    public class UIManager : MonoBehaviour
+    public class PlayerUI : MonoBehaviour
     {
         [SerializeField] private Slider _playerHealthSlider;
         [SerializeField] private Gradient _playerHealthGradient;
         [SerializeField] private Image _playerHealthFill;
         [SerializeField] private RectTransform _playerHealthRectTransform;
-        [SerializeField] private Slider _cityCoreHealthSlider;
-        [SerializeField] private Gradient _cityCoreHealthGradient;
-        [SerializeField] private Image _cityCoreHealthFill;
-        [SerializeField] private RectTransform _cityCoreHealthRectTransform;
 
         private void Awake()
         {
             PlayerCombat.OnHealthChanged += UpdatePlayerHealthUI;
             PlayerCombat.OnMaxHealthIncreased += SetMaxPlayerHealthUI;
-            CityCore.OnHealthChanged += UpdateCityCoreHealthUI;
-            CityCore.OnMaxHealthIncreased += SetMaxCityCoreHealthUI;
         }
 
         private void OnDestroy()
         {
             PlayerCombat.OnHealthChanged -= UpdatePlayerHealthUI;
             PlayerCombat.OnMaxHealthIncreased -= SetMaxPlayerHealthUI;
-            CityCore.OnHealthChanged -= UpdateCityCoreHealthUI;
-            CityCore.OnMaxHealthIncreased -= SetMaxCityCoreHealthUI;
         }
 
         public void SetMaxPlayerHealthUI(int maxHealth)
@@ -43,23 +34,10 @@ namespace SpectraStudios.CityChamp.UI
             _playerHealthSlider.maxValue = maxHealth;
         }
 
-        public void SetMaxCityCoreHealthUI(int maxHealth)
-        {
-            _cityCoreHealthRectTransform.sizeDelta = new Vector2(_cityCoreHealthRectTransform.sizeDelta.x + 5, _cityCoreHealthRectTransform.sizeDelta.y);
-            _cityCoreHealthRectTransform.localPosition += new Vector3(-2.5f, 0, 0);
-            _cityCoreHealthSlider.maxValue = maxHealth;
-        }
-
         public void UpdatePlayerHealthUI(int health)
         {
             _playerHealthSlider.value = health;
             _playerHealthFill.color = _playerHealthGradient.Evaluate(_playerHealthSlider.normalizedValue);
-        }
-
-        public void UpdateCityCoreHealthUI(int health)
-        {
-            _cityCoreHealthSlider.value = health;
-            _cityCoreHealthFill.color = _cityCoreHealthGradient.Evaluate(_cityCoreHealthSlider.normalizedValue);
         }
     }
 }
