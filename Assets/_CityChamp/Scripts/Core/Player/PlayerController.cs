@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SpectraStudios.CityChamp
 {
-    public class Player : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         [SerializeField] private GameObject _playerCombat;
 

@@ -168,6 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _agent: {fileID: -7899476945333943247}
+  _rigidBody: {fileID: 8226547875458695765}
+  _collider: {fileID: 8226547875458695764}
   _animator: {fileID: 6194680594633961820}
   _enemyScriptableObject: {fileID: 11400000, guid: 8a25f4abf0544784090068720bd52692,
     type: 2}

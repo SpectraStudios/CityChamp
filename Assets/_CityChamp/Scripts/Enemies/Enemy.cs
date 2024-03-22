@@ -13,6 +13,8 @@ namespace SpectraStudios.CityChamp.Enemies
         public static event Action<int> OnEnemyDiedRedeemPoints;
 
         [SerializeField] private NavMeshAgent _agent;
+        [SerializeField] private Rigidbody _rigidBody;
+        [SerializeField] private Collider _collider;
         [SerializeField] private Animator _animator;
         [SerializeField] private EnemyScriptableObject _enemyScriptableObject;
         public Slider EnemyHealthSlider;
@@ -52,6 +54,9 @@ namespace SpectraStudios.CityChamp.Enemies
             _agent.enabled = true;
             
             SetupAgentFromConfiguration();
+
+            _rigidBody.isKinematic = false;
+            _collider.enabled = true;
 
             // Set up the enemy's health each time it is spawned
             Health = MaxHealth;
@@ -151,6 +156,9 @@ namespace SpectraStudios.CityChamp.Enemies
         public virtual void Death()
         {
             IsDead = true;
+
+            _rigidBody.isKinematic = true;
+            _collider.enabled = false;
 
             EnemyHealthSlider.gameObject.SetActive(value: false);
 
