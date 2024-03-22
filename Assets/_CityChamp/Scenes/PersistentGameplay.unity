@@ -1360,12 +1360,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102316534}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6591303042112067995}
+  m_Father: {fileID: 1722579066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &102316536
 MonoBehaviour:
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   Finger: 1
   _start: {fileID: 2042339034}
   _canBlast: 1
-  _projectilePrefab: {fileID: 2333337043151346043, guid: 17f69fcc81e592547b688cccbfd0a668,
+  _projectilePrefab: {fileID: 2112343144013341020, guid: e2228d24b3a00354b902fe814db0de83,
     type: 3}
   _numProjectiles: 5
 --- !u!1 &102772427
@@ -3380,7 +3380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &270137153
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3444,7 +3444,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 270137155}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2138200687}
+        m_TargetAssemblyTypeName: SpectraStudios.CityChamp.ModeSelectionState, Assembly-CSharp
+        m_MethodName: SelectOutdoorAR
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &270137155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3718,7 +3730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &309471973
 Transform:
   m_ObjectHideFlags: 0
@@ -3749,7 +3761,7 @@ GameObject:
   - component: {fileID: 309957906}
   - component: {fileID: 309957908}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Right Poke'
+  m_Name: Right Poke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4006,7 +4018,7 @@ GameObject:
   - component: {fileID: 317692619}
   - component: {fileID: 317692618}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Camera Rig'
+  m_Name: Camera Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4147,6 +4159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6591303042112067995}
   - {fileID: 333417572}
   - {fileID: 1084195260}
   m_Father: {fileID: 0}
@@ -4195,7 +4208,7 @@ GameObject:
   - component: {fileID: 327261154}
   - component: {fileID: 327261153}
   m_Layer: 5
-  m_Name: GameModeCanvas
+  m_Name: SelectModeCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5884,7 +5897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469060856}
   - component: {fileID: 469060857}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: PinchPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7480,7 +7493,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &614285779
 Canvas:
   m_ObjectHideFlags: 0
@@ -8487,12 +8500,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732808713}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6591303042112067995}
+  m_Father: {fileID: 1722579066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &732808715
 MonoBehaviour:
@@ -8510,7 +8523,7 @@ MonoBehaviour:
   Finger: 1
   _start: {fileID: 2042339034}
   _canBlast: 1
-  _projectilePrefab: {fileID: 2333337043151346043, guid: 17f69fcc81e592547b688cccbfd0a668,
+  _projectilePrefab: {fileID: 2112343144013341020, guid: e2228d24b3a00354b902fe814db0de83,
     type: 3}
   _numProjectiles: 5
 --- !u!1 &733885386
@@ -8561,7 +8574,7 @@ GameObject:
   - component: {fileID: 739415830}
   - component: {fileID: 739415832}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Right Ray'
+  m_Name: Right Ray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9010,7 +9023,7 @@ GameObject:
   - component: {fileID: 764004118}
   - component: {fileID: 764004117}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Synthetic Left Hand'
+  m_Name: Synthetic Left Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10878,7 +10891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &909848766
 Transform:
   m_ObjectHideFlags: 0
@@ -11677,7 +11690,7 @@ GameObject:
   - component: {fileID: 997087309}
   - component: {fileID: 997087311}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Left Poke'
+  m_Name: Left Poke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12704,7 +12717,7 @@ GameObject:
   - component: {fileID: 1084195262}
   - component: {fileID: 1084195261}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Interaction'
+  m_Name: Interaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12781,7 +12794,7 @@ GameObject:
   - component: {fileID: 1094352253}
   - component: {fileID: 1094352252}
   - component: {fileID: 1094352251}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: PinchPointRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13112,7 +13125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1122054744
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13634,7 +13647,7 @@ GameObject:
   - component: {fileID: 1172116017}
   - component: {fileID: 1172116016}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Synthetic Right Hand'
+  m_Name: Synthetic Right Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13987,7 +14000,7 @@ GameObject:
   - component: {fileID: 1199685584}
   - component: {fileID: 1199685582}
   - component: {fileID: 1199685583}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: PinchArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14377,7 +14390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1235000151
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14441,7 +14454,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1235000153}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2138200687}
+        m_TargetAssemblyTypeName: SpectraStudios.CityChamp.ModeSelectionState, Assembly-CSharp
+        m_MethodName: SelectIndoorVR
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1235000153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14926,7 +14951,7 @@ GameObject:
   - component: {fileID: 1297416563}
   - component: {fileID: 1297416562}
   - component: {fileID: 1297416561}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: PinchPointRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15195,7 +15220,7 @@ GameObject:
   - component: {fileID: 1334001918}
   - component: {fileID: 1334001917}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Passthrough'
+  m_Name: Passthrough
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16236,7 +16261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1431579761}
   - component: {fileID: 1431579762}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: PinchPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16579,7 +16604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1469440822
 Transform:
   m_ObjectHideFlags: 0
@@ -17222,7 +17247,7 @@ GameObject:
   - component: {fileID: 1549996196}
   - component: {fileID: 1549996198}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Left Ray'
+  m_Name: Left Ray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19024,6 +19049,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1121311507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1722579063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722579066}
+  - component: {fileID: 1722579065}
+  - component: {fileID: 1722579064}
+  m_Layer: 0
+  m_Name: PlayerCombat
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1722579064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722579063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e08d0dd3fb8284e818db16b0965ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHitCounter: 0
+--- !u!136 &1722579065
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722579063}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Height: 0.6
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1722579066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722579063}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 706522027588989211}
+  - {fileID: 2042339034}
+  - {fileID: 732808714}
+  - {fileID: 102316535}
+  m_Father: {fileID: 6591303042112067995}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1727857927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20430,6 +20528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kunitachi-alley-3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1200506398366871954, guid: 6e0c79fb5115158419a167536c24c85d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1200506398366871954, guid: 6e0c79fb5115158419a167536c24c85d,
         type: 3}
@@ -25857,7 +25960,7 @@ GameObject:
   - component: {fileID: 1890899407}
   - component: {fileID: 1890899405}
   - component: {fileID: 1890899406}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: PinchArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27698,7 +27801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2023814885
 Transform:
   m_ObjectHideFlags: 0
@@ -27819,12 +27922,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042339033}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2, z: 0.675}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.23, z: 0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6591303042112067995}
+  m_Father: {fileID: 1722579066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044279238
 GameObject:
@@ -28767,6 +28870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138200685}
   - component: {fileID: 2138200686}
+  - component: {fileID: 2138200687}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -28799,6 +28903,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f483b97f53945340b37999c65886ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2138200687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138200684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d9b2fa5ba68d542a7563c78c913cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2141025942
@@ -29565,7 +29681,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 453887475397439680}
-  m_Father: {fileID: 6591303042112067995}
+  m_Father: {fileID: 1722579066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -29769,19 +29885,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 789737b1f45760f4fb28abb14225d939, type: 3}
---- !u!114 &3029386583071096762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8366008567219942080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8e08d0dd3fb8284e818db16b0965ff8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerHitCounter: 0
 --- !u!114 &3337608670917232363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30536,27 +30639,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &5640605944929221359
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8366008567219942080}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5, y: 0.5, z: 0.1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6120673063080599134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30600,11 +30682,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 706522027588989211}
-  - {fileID: 2042339034}
-  - {fileID: 732808714}
-  - {fileID: 102316535}
-  m_Father: {fileID: 0}
+  - {fileID: 1722579066}
+  m_Father: {fileID: 317692622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &6643600364344599971
 RectTransform:
@@ -31058,9 +31137,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6591303042112067995}
-  - component: {fileID: 5640605944929221359}
   - component: {fileID: 8366008567219942081}
-  - component: {fileID: 3029386583071096762}
+  - component: {fileID: 8366008567219942083}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -31082,6 +31160,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 695872160}
   Offset: {x: 0, y: 0, z: 0}
+--- !u!114 &8366008567219942083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8366008567219942080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e711443e588eb444bb1bf894a848b73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerCombat: {fileID: 1722579063}
 --- !u!114 &8463410977938743296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31261,7 +31352,6 @@ SceneRoots:
   - {fileID: 2023814885}
   - {fileID: 909848766}
   - {fileID: 2087630868}
-  - {fileID: 6591303042112067995}
   - {fileID: 554592483}
   - {fileID: 933376935}
   - {fileID: 309471973}

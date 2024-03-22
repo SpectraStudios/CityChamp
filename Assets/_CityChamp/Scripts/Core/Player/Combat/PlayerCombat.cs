@@ -1,0 +1,82 @@
+// Manages player stats, including health and how many times the player has been hit in a wave
+
+using System;
+using UnityEngine;
+
+namespace SpectraStudios.CityChamp
+{
+    public class PlayerCombat : MonoBehaviour, IDamageable
+    {
+        public static event Action<int> OnHealthChanged;
+        public static event Action<int> OnMaxHealthIncreased;
+        public static event Action OnDied;
+
+        [HideInInspector] public int PlayerHitCounter = 0;
+
+        private int _maxHealth = 100;
+
+        public int Health { get; set; }
+
+        private void Awake()
+        {
+            Health = _maxHealth;
+        }
+
+        private void Start()
+        {
+            SetToMaxHealth();
+        }
+
+        public void SetToMaxHealth()
+        {
+            Health = _maxHealth;
+            OnHealthChanged?.Invoke(Health);
+        }
+
+        public void IncreaseMaxHealth(int amount)
+        {
+            _maxHealth += amount;
+            OnMaxHealthIncreased?.Invoke(_maxHealth);
+
+            // Increasing max health adds that amount to current health too
+            Health += amount;
+            OnHealthChanged?.Invoke(Health);
+        }
+
+        public void ResetPlayerHitCounter()
+        {
+            PlayerHitCounter = 0;
+        }
+
+        public void IncreasePlayerHitCounter()
+        {
+            PlayerHitCounter += 1;
+        }
+
+        public void TakeDamage(int damageAmount)
+        {
+            IncreasePlayerHitCounter();
+
+            Health -= damageAmount;
+
+            if (Health <= 0)
+            {
+                Death();
+            }
+            else
+            {
+                OnHealthChanged?.Invoke(Health);
+            }
+        }
+
+        public void Death()
+        {
+            // Reset health to 0 in case the player got hit at the end
+            Health = 0;
+            OnHealthChanged?.Invoke(Health);
+
+            // Trigger respawn
+            OnDied?.Invoke();
+        }
+    }
+}
