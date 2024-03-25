@@ -12,6 +12,8 @@ namespace SpectraStudios.CityChamp
         public static event Action OnDied;
 
         [HideInInspector] public int PlayerHitCounter = 0;
+        [HideInInspector] public bool IsDefending = false;
+        [HideInInspector] public bool IsDead { get; private set; }
 
         private int _maxHealth = 100;
 
@@ -19,7 +21,15 @@ namespace SpectraStudios.CityChamp
 
         private void Awake()
         {
+            IsDead = false;
             Health = _maxHealth;
+
+            Defend.OnPlayerDefending += SetIsDefending;
+        }
+
+        private void OnDestroy()
+        {
+            Defend.OnPlayerDefending -= SetIsDefending;
         }
 
         private void Start()
@@ -53,24 +63,34 @@ namespace SpectraStudios.CityChamp
             PlayerHitCounter += 1;
         }
 
+        private void SetIsDefending(bool isDefending)
+        {
+            IsDefending = isDefending;
+        }
+
         public void TakeDamage(int damageAmount)
         {
-            IncreasePlayerHitCounter();
-
-            Health -= damageAmount;
-
-            if (Health <= 0)
+            if (!IsDead && !IsDefending)
             {
-                Death();
-            }
-            else
-            {
-                OnHealthChanged?.Invoke(Health);
+                IncreasePlayerHitCounter();
+
+                Health -= damageAmount;
+
+                if (Health <= 0)
+                {
+                    Death();
+                }
+                else
+                {
+                    OnHealthChanged?.Invoke(Health);
+                }
             }
         }
 
         public void Death()
         {
+            IsDead = true;
+
             // Reset health to 0 in case the player got hit at the end
             Health = 0;
             OnHealthChanged?.Invoke(Health);

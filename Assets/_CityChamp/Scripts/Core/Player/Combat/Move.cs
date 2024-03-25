@@ -1,21 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SpectraStudios.CityChamp
 {
     public class Move : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+        [SerializeField] private Transform _player;
 
-        // Update is called once per frame
-        void Update()
+        public void Teleport()
         {
-        
+
         }
     }
 }

@@ -59,7 +59,6 @@ namespace SpectraStudios.CityChamp
             }
         }
 
-
         public void Blast()
         {
             if (_canBlast)
