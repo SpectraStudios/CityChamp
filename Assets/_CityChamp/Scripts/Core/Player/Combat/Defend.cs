@@ -24,6 +24,7 @@ namespace SpectraStudios.CityChamp
             if (Hand != null)
             {
                 Shield.transform.position = Vector3.SmoothDamp(Shield.transform.position, Hand.transform.position + Offset, ref _velocity, _smoothSpeed * Time.deltaTime);
+                Shield.transform.rotation = Quaternion.Euler(Vector3.SmoothDamp(Shield.transform.rotation.eulerAngles, Hand.transform.eulerAngles, ref _velocity, _smoothSpeed * Time.deltaTime));
             }
         }
 

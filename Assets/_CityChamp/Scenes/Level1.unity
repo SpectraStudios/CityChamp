@@ -680,6 +680,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 200092713}
+    - targetCorrespondingSourceObject: {fileID: -1200506398366871954, guid: 6e0c79fb5115158419a167536c24c85d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 200092715}
+    - targetCorrespondingSourceObject: {fileID: -1200506398366871954, guid: 6e0c79fb5115158419a167536c24c85d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 200092714}
   m_SourcePrefab: {fileID: 9199261849990390558, guid: 6e0c79fb5115158419a167536c24c85d,
     type: 3}
 --- !u!4 &200092711 stripped
@@ -716,6 +724,42 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8870886256725475529, guid: 6e0c79fb5115158419a167536c24c85d, type: 3}
+--- !u!114 &200092714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200092712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4462db6b836045640a882a2a4e4022f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _allowTeleport: 1
+  _equalDistanceToBlockerOverride: 0
+  _tieBreakerScore: 0
+  _surface: {fileID: 200092715}
+  _targetPoint: {fileID: 0}
+  _faceTargetDirection: 0
+  _eyeLevel: 0
+--- !u!114 &200092715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200092712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 200092713}
 --- !u!1001 &295312402
 PrefabInstance:
   m_ObjectHideFlags: 0
