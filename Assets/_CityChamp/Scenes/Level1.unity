@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1353,15 +1353,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: 2e244669044b3874bb66d2e2b157046b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.163036
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: 2e244669044b3874bb66d2e2b157046b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.880277
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: 2e244669044b3874bb66d2e2b157046b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.5673423
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: 2e244669044b3874bb66d2e2b157046b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1666,15 +1666,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: 322b145bb5ca50941b0cd68745ddb119, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.163036
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: 322b145bb5ca50941b0cd68745ddb119, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.880277
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: 322b145bb5ca50941b0cd68745ddb119, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.5673423
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: 322b145bb5ca50941b0cd68745ddb119, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1782,15 +1782,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: f59425f63d4c28045be2603efeb17c88, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.163036
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: f59425f63d4c28045be2603efeb17c88, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.880277
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: f59425f63d4c28045be2603efeb17c88, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.5673423
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884365002741860, guid: f59425f63d4c28045be2603efeb17c88, type: 3}
       propertyPath: m_LocalRotation.w
