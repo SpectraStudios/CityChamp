@@ -1686,7 +1686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hand: {fileID: 2005308788}
-  Finger: 1
+  IndexFinger: 1
+  MiddleFinger: 2
   _start: {fileID: 2042339034}
   _canBlast: 1
   _projectilePrefab: {fileID: 2112343144013341020, guid: e2228d24b3a00354b902fe814db0de83,
@@ -10281,7 +10282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hand: {fileID: 1960192308}
-  Finger: 1
+  IndexFinger: 1
+  MiddleFinger: 2
   _start: {fileID: 2042339034}
   _canBlast: 1
   _projectilePrefab: {fileID: 2112343144013341020, guid: e2228d24b3a00354b902fe814db0de83,

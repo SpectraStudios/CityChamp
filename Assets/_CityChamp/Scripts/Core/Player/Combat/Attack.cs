@@ -8,11 +8,16 @@ namespace SpectraStudios.CityChamp
     {
         private bool _hasPinched;
         private bool _isIndexFingerPinching;
-        private float _pinchStrength;
-        private OVRHand.TrackingConfidence _confidence;
+        private float _indexPinchStrength;
+        private OVRHand.TrackingConfidence _indexConfidence;
+
+        private bool _isMiddleFingerPinching;
+        private float _middlePinchStrength;
+        private OVRHand.TrackingConfidence _middleConfidence;
 
         public OVRHand Hand;
-        public OVRHand.HandFinger Finger;
+        public OVRHand.HandFinger IndexFinger;
+        public OVRHand.HandFinger MiddleFinger;
 
         [SerializeField] private Transform _start;
         private float _projectileSpeed = 12;
@@ -34,26 +39,32 @@ namespace SpectraStudios.CityChamp
 
         private void Start()
         {
-            Finger = OVRHand.HandFinger.Index;
+            IndexFinger = OVRHand.HandFinger.Index;
+            MiddleFinger = OVRHand.HandFinger.Middle;
         }
 
         private void Update()
         {
-            CheckPinch(Hand, Finger);
+            CheckPinch(Hand, IndexFinger, MiddleFinger);
         }
 
-        private void CheckPinch(OVRHand hand, OVRHand.HandFinger finger)
+        private void CheckPinch(OVRHand hand, OVRHand.HandFinger indexFinger, OVRHand.HandFinger middleFinger)
         {
-            _pinchStrength = hand.GetFingerPinchStrength(finger);
-            _isIndexFingerPinching = hand.GetFingerIsPinching(finger);
-            _confidence = hand.GetFingerConfidence(finger);
+            _indexPinchStrength = hand.GetFingerPinchStrength(indexFinger);
+            _isIndexFingerPinching = hand.GetFingerIsPinching(indexFinger);
+            _indexConfidence = hand.GetFingerConfidence(indexFinger);
 
-            if (!_hasPinched && _isIndexFingerPinching && _confidence == OVRHand.TrackingConfidence.High)
+            _middlePinchStrength = hand.GetFingerPinchStrength(middleFinger);
+            _isMiddleFingerPinching = hand.GetFingerIsPinching(middleFinger);
+            _middleConfidence = hand.GetFingerConfidence(middleFinger);
+
+
+            if (!_hasPinched && _isIndexFingerPinching && _isMiddleFingerPinching && _indexConfidence == OVRHand.TrackingConfidence.High && _middleConfidence == OVRHand.TrackingConfidence.High)
             {
                 _hasPinched = true;
                 Blast();
             }
-            else if (_hasPinched && !_isIndexFingerPinching)
+            else if (_hasPinched && !_isIndexFingerPinching && !_isMiddleFingerPinching)
             {
                 _hasPinched = false;
             }
