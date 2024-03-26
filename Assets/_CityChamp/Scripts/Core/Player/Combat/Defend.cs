@@ -9,24 +9,11 @@ namespace SpectraStudios.CityChamp
         public static event Action<bool> OnPlayerDefending;
 
         public OVRHand Hand;
-        public Vector3 Offset;
         public GameObject Shield;
 
         [SerializeField] private bool _canShield = true;
-        private float _shieldTime = 3f;
-        private float _cooldownTime = 4f;
-
-        private float _smoothSpeed = 0.125f;
-        private Vector3 _velocity = Vector3.zero;
-
-        private void LateUpdate()
-        {
-            if (Hand != null)
-            {
-                Shield.transform.position = Vector3.SmoothDamp(Shield.transform.position, Hand.transform.position + Offset, ref _velocity, _smoothSpeed * Time.deltaTime);
-                Shield.transform.rotation = Quaternion.Euler(Vector3.SmoothDamp(Shield.transform.rotation.eulerAngles, Hand.transform.eulerAngles, ref _velocity, _smoothSpeed * Time.deltaTime));
-            }
-        }
+        private float _shieldTime = 5f;
+        private float _cooldownTime = 7f;
 
         public void ActivateShield()
         {
