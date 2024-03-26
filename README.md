@@ -40,14 +40,15 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 ### 🪙 How it works 🗺️
 
 - Connect your Solana wallet or automatically generate a new wallet.
-- The game is split into two play modes: Outdoor AR and Indoor VR.
-- Scanning is only available in Outdoor AR. Building is only available in Indoor VR.
+- The game is split into two play modes: Outdoor AR and Indoor VR.*
 - Upload mobile 3D scans and mint them on the MeshMap blockchain. Scans and their original geotagged data are stored together.
 - Earn $MESH or CityChamp tokens for scanning new areas.
 - Earn $MESH or CityChamp tokens when your scans are used by others.
 - Spend CityChamp tokens to use scans in your levels.
 - Spend CityChamp tokens to play levels.
 - Earn CityChamp tokens when your levels are played.
+
+*Scanning is only available in Outdoor AR. Building is only available in Indoor VR.
 
 </br>
 
