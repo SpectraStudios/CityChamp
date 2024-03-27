@@ -8,25 +8,19 @@
 City Champ is a mixed reality first-person combat, tower defense game developed for Meta Quest 3 using [Unity](https://unity.com/) and the [Solana SDK](https://github.com/magicblock-labs/Solana.Unity-SDK).
 
 - As a player, defend your city 🏙️ from ghoulish creatures 👾 borne from urban social problems. Blast enemies, defend the *city core*, and collect reforms to win.
-- As a builder, design new levels using 3D scans from across your city to challenge your peers.
 - As a scanner, scan the meshes for new play areas using your phone's built-in LiDAR scanner to add endless level location possibilities.
+- (*coming soon!*) As a builder, design new levels using 3D scans from across your city to challenge your peers.
 
 </br>
 
 ### 👨🏻‍💻 Roles 🦸🏻‍♀️
 
-#### For players 🎮: (outdoor AR or indoor VR)
+#### For players 🎮: (outdoor AR or indoor VR, headset)
 
-1. Go to any location in your city where a game level has been created.
+1. Go to any location in your city (AR) or on the world map (VR) where a game level has been created.
 2. Choose the level that you want and pay a small amount in CityChamp tokens to play.
 3. Beat the level by collecting all the reforms that spawn in the play area, while blasting enemies and defending the *city core* from damage. Pick up stat boosts to help you in your battle.
 4. Earn achievements and collectables for winning!
-
-#### For builders 🛠️: (indoor, MR headset)
-
-1. Choose any scanned area and pay a small amount in CityChamp tokens to use it for your game level.
-2. Design the level by placing enemies, weapons, and stat boosts to spawn around the play area.
-3. Submit your level and earn CityChamp tokens every time someone plays it!
 
 #### For scanners 📱: (outdoor, mobile)
 
@@ -35,20 +29,39 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 3. Send your scans to the MeshMap blockchain and earn tokens!
 4. Earn achievements and collectables for scanning new areas!
 
+#### (*coming soon!*) For builders 🛠️: (indoor VR, headset)
+
+1. Choose any scanned area and pay a small amount in CityChamp tokens to use it for your game level.
+2. Design the level by placing enemies, weapons, and stat boosts to spawn around the play area.
+3. Submit your level and earn CityChamp tokens every time someone plays it!
+
 </br>
 
 ### 🪙 How it works 🗺️
 
-- Connect your Solana wallet or automatically generate a new wallet.
-- The game is split into two play modes: Outdoor AR and Indoor VR.*
-- Upload mobile 3D scans and mint them on the MeshMap blockchain. Scans and their original geotagged data are stored together.
-- Earn $MESH or CityChamp tokens for scanning new areas.
-- Earn $MESH or CityChamp tokens when your scans are used by others.
-- Spend CityChamp tokens to use scans in your levels.
-- Spend CityChamp tokens to play levels.
-- Earn CityChamp tokens when your levels are played.
+#### Sign up 🙋🏽‍♀️
 
-*Scanning is only available in Outdoor AR. Building is only available in Indoor VR.
+- Download the CityChamp.apk build.
+- Load it onto your Quest 2/3/Pro using [SideQuest](https://sidequestvr.com/setup-howto).
+- Launch the app and create a new City Champ player account!
+- Optional: Connect your Solana wallet or automatically generate a new wallet.*
+
+*connecting a wallet is needed to submit scans to MeshMap and receive collectables.
+
+#### Gameplay loop 
+
+- The game is split into two play modes: Outdoor AR and Indoor VR.
+- Go to any location in your city (AR) or on the world map (VR) where a game level has been created.
+- Spend CityChamp tokens to play levels.
+- Earn $MESH or CityChamp tokens for scanning new areas.
+- Upload mobile 3D scans of outdoor pedestrian-safe areas to mint them on the MeshMap blockchain. Scans and their original geotagged data are stored together.
+- (*coming soon!*) Earn $MESH or CityChamp tokens when your scans are used by others.
+- (*coming soon!*) Spend CityChamp tokens to use scans in your levels.
+- (*coming soon!*) Earn CityChamp tokens when your levels are played.
+
+#### Controls
+
+note: add gifs of controls and gameplay here
 
 </br>
 
