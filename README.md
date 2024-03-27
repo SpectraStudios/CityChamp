@@ -24,7 +24,7 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 
 Outdoor AR | Indoor VR
 --- | ---
-<video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/47ca8c7f-8658-489c-a06d-d700372774fe"> | 
+<video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/47ca8c7f-8658-489c-a06d-d700372774fe"> | <video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/5adcc325-9242-4ca5-971a-b7cc24aa3661">
 
 #### For scanners 📱: (outdoor, mobile)
 
@@ -50,22 +50,21 @@ Outdoor AR | Indoor VR
 - Launch the app and create a new City Champ player account!
 - Optional: Connect your Solana wallet or automatically generate a new wallet.*
 
-*connecting a wallet is needed to submit scans to MeshMap and receive collectables.
+*Connecting a wallet is needed to submit scans to MeshMap and receive collectables.
 
 #### Gameplay loop 🔁
 
 - The game is split into two play modes: Outdoor AR and Indoor VR.
 - Go to any location in your city (AR) or on the world map (VR) where a game level has been created.
 - Spend CityChamp tokens to play levels.
-- Earn $MESH or CityChamp tokens for scanning new areas.
-- Upload mobile 3D scans of outdoor pedestrian-safe areas to mint them on the MeshMap blockchain. Scans and their original geotagged data are stored together.
+- Earn $MESH or CityChamp tokens for scanning and uploading mobile 3D scans of outdoor pedestrian-safe areas to the MeshMap blockchain. Scans and their original geotagged data are stored together.
 - (*coming soon!*) Earn $MESH or CityChamp tokens when your scans are used by others.
 - (*coming soon!*) Spend CityChamp tokens to use scans in your levels.
 - (*coming soon!*) Earn CityChamp tokens when your levels are played.
 
-#### Controls 👉
+#### Hand tracking 👉
 
-*Make sure hand tracking and passthrough are enabled in your Meta Quest settings.
+Make sure hand tracking and passthrough are enabled in your Meta Quest settings.
 
 | Attack | Defend | Teleport (only in VR) | Turn (only in VR) |
 | :------ | :-------- | :-------- | :------ |
@@ -75,15 +74,17 @@ Outdoor AR | Indoor VR
 
 ### 🔗 Creating a decentralized 3D mesh of the world on blockchain 🌐
 
-Mixed reality content creation is a wide open market. The 3D mapping industry is also primed for disruption. With City Champ, we can ship a game that makes scanning a decentralized 3D world map fun and rewarding.
+Our goal for City Champ—in addition to making urban AR as fun as possible—is to bootstrap an ambitious moonshot 🚀 product, **MeshMap**: a Solana DApp for scanning, geotagging, minting, and mapping a decentralized 3D mesh of the world.
 
-Our goal for City Champ—in addition to being as fun as possible—is to bootstrap an ambitious moonshot 🚀 product, **MeshMap**: a Solana DApp for scanning, geotagging, minting, and mapping a decentralized 3D mesh of the world.
+![A digital rendering showing a city street through three lens of physical reality, AR, and VR.](https://github.com/SpectraStudios/.github/blob/main/spectra_3views.webp)
 
-Urban AR games and experiences like City Champ that integrate with MeshMap would function as a loosely connected network of AR creator platforms, facilitating an explosion in growth of AR content.
+Mixed reality content creation is a wide open market. The 3D mapping industry is also primed for disruption.
+
+With City Champ (and other games and experiences like it 👀) we can make scanning a decentralized 3D world map fun and rewarding 🎉. By integrating with MeshMap for scanning, AR games and creator platforms would function as a loosely connected network of spatial data sources and could facilitate an explosion in growth of AR content.
 
 Furthermore, companies and governments could use MeshMap for large projects in urban planning, transportation, construction, disaster prevention and response, and other cases where spatial data is valuable.
 
-![A digital rendering showing a city street through three lens of physical reality, AR, and VR.](https://github.com/SpectraStudios/.github/blob/main/spectra_3views.webp)
+Spatial data is too important to our collective future to let its collection and management be dominated by a handful of powerful tech companies. With MeshMap, we aim to design a decentralized alternative.
 
 </br>
 
