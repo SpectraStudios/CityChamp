@@ -61,7 +61,11 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 
 #### Controls
 
-note: add gifs of controls and gameplay here
+
+
+https://github.com/SpectraStudios/CityChamp/assets/44980191/69417e6c-0c06-4a7c-b356-9f601ef293df
+
+
 
 </br>
 
