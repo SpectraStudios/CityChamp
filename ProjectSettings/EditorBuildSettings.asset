@@ -15,30 +15,30 @@ EditorBuildSettings:
     path: Assets/_CityChamp/Scenes/MainMenu.unity
     guid: 81f8fd5fe1ee1464cbb3a08fbd52a22c
   - enabled: 0
-    path: Assets/_CityChamp/Scenes/InputsMenu.unity
-    guid: 53d13201ff510c046821d11fdc0177a3
-  - enabled: 0
     path: Assets/_CityChamp/Scenes/LoadingScreen.unity
     guid: 2ac2449e5266d0341945049e3ce2e4e2
   - enabled: 0
     path: Assets/_CityChamp/Scenes/WorldMap.unity
     guid: d23986dac131b874ebbb291318f04e87
   - enabled: 1
+    path: Assets/_CityChamp/Scenes/AR.unity
+    guid: 43e2675872b3b4a4f81dd2243adf176c
+  - enabled: 0
     path: Assets/_CityChamp/Scenes/Level1.unity
     guid: b3cb6d1a4945e344db0653806ee2f9ea
-  - enabled: 1
+  - enabled: 0
     path: Assets/_CityChamp/Scenes/Level2.unity
     guid: fe5651c186e5bba40b49288e02bbebb4
-  - enabled: 1
+  - enabled: 0
     path: Assets/_CityChamp/Scenes/Level3.unity
     guid: aa62087dbf760d545866ddb2c6de1591
-  - enabled: 1
+  - enabled: 0
     path: Assets/_CityChamp/Scenes/Level4.unity
     guid: eef9a2edb57670c4fb56fae9fb84ae39
-  - enabled: 1
+  - enabled: 0
     path: Assets/_CityChamp/Scenes/Level5.unity
     guid: 791c62b7ae57cab4fa0aac6a83b99a27
-  - enabled: 1
+  - enabled: 0
     path: Assets/_CityChamp/Scenes/Level6.unity
     guid: f0962306be573304c8cafeddebf016cb
   m_configObjects:

@@ -87,6 +87,15 @@ namespace SpectraStudios.CityChamp
             _levelPanel.SetActive(true);
         }
 
+        public void GoToLevelAR()
+        {
+            if (_currentLevelScene != "AR")
+            {
+                UnloadScene(_currentLevelScene);
+                LoadScene("AR");
+            }
+        }
+
         public void GoToLevel1()
         {
             if (_currentLevelScene != "Level1")
