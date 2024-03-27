@@ -22,9 +22,9 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 3. Beat the level by collecting all the reforms that spawn in the play area, while blasting enemies and defending the *city core* from damage. Pick up stat boosts to help you in your battle.
 4. Earn achievements and collectables for winning!
 
-Outdoor AR | Indoor VR
---- | ---
-<video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/47ca8c7f-8658-489c-a06d-d700372774fe"> | <video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/5adcc325-9242-4ca5-971a-b7cc24aa3661">
+| Outdoor AR | Indoor VR |
+| :--- | :--- |
+| <video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/47ca8c7f-8658-489c-a06d-d700372774fe"> | <video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/5adcc325-9242-4ca5-971a-b7cc24aa3661"> |
 
 #### For scanners 📱: (outdoor, mobile)
 
@@ -85,6 +85,16 @@ With City Champ (and other games and experiences like it 👀) we can make scann
 Furthermore, companies and governments could use MeshMap for large projects in urban planning, transportation, construction, disaster prevention and response, and other cases where spatial data is valuable.
 
 Spatial data is too important to our collective future to let its collection and management be dominated by a handful of powerful tech companies. With MeshMap, we aim to design a decentralized alternative.
+
+### 📆 Timeline 🎢
+
+| | MeshMap | City Champ |
+| :--- | :--- | :--- |
+| 2024 Q1 | ◻️ Establish connection to Solana </br> ◻️ Set up data storage </br> ◻️ Mint $MESH  </br> ◻️ Enable users to submits scans | ✅ FPS and tower defense core gameplay mechanics </br> ✅ Indoor VR using scans </br> ◻️ Web app for Solana and MeshMap integrations </br> ◻️ CityChamp tokens |
+| 2024 Q2 | ◻️ Set up pipeline for processing and optimization | ◻️ Outdoor AR </br> ◻️ More enemies, attacks, power ups, and locations </br> ◻️ Companions and reform points </br> ◻️ Player EXP leveling </br> ◻️ Achievements and daily quests </br> ◻️ Rating scans |
+| 2024 Q3 | ◻️ Allow users to download processed scans  </br> ◻️ Expand games/apps that integrate MeshMap | ◻️ Multiplayer and Alliance system </br> ◻️ Boss fights </br> ◻️ More enemies and companions </br> ◻️ In-game scanning opportunities </br> ◻️ Available on more devices/platforms |
+| 2024 Q4 | ◻️ Release a MeshMap Unity SDK | ◻️ Builder mode |
+
 
 </br>
 
