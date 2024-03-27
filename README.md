@@ -86,6 +86,8 @@ Furthermore, companies and governments could use MeshMap for large projects in u
 
 Spatial data is too important to our collective future to let its collection and management be dominated by a handful of powerful tech companies. With MeshMap, we aim to design a decentralized alternative.
 
+</br>
+
 ### 📆 Timeline 🎢
 
 | | MeshMap | City Champ |
