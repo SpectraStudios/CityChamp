@@ -22,6 +22,10 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 3. Beat the level by collecting all the reforms that spawn in the play area, while blasting enemies and defending the *city core* from damage. Pick up stat boosts to help you in your battle.
 4. Earn achievements and collectables for winning!
 
+Outdoor AR | Indoor VR
+--- | ---
+<video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/47ca8c7f-8658-489c-a06d-d700372774fe"> | 
+
 #### For scanners 📱: (outdoor, mobile)
 
 1. Explore your local city to discover cool locations for AR content.
@@ -48,7 +52,7 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 
 *connecting a wallet is needed to submit scans to MeshMap and receive collectables.
 
-#### Gameplay loop 
+#### Gameplay loop 🔁
 
 - The game is split into two play modes: Outdoor AR and Indoor VR.
 - Go to any location in your city (AR) or on the world map (VR) where a game level has been created.
@@ -59,13 +63,13 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 - (*coming soon!*) Spend CityChamp tokens to use scans in your levels.
 - (*coming soon!*) Earn CityChamp tokens when your levels are played.
 
-#### Controls
+#### Controls 👉
 
+*Make sure hand tracking and passthrough are enabled in your Meta Quest settings.
 
-
-https://github.com/SpectraStudios/CityChamp/assets/44980191/69417e6c-0c06-4a7c-b356-9f601ef293df
-
-
+| Attack | Defend | Teleport (only in VR) | Turn (only in VR) |
+| :------ | :-------- | :-------- | :------ |
+| <video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/d53f56ba-16e8-4470-a9da-2393dfa02d4b"> | <video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/2797e995-d706-4b71-9be5-0a7663d1f30c"> | <video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/b4b2a6a6-3328-4975-a62b-8f97d7283259"> | <video src = "https://github.com/SpectraStudios/CityChamp/assets/44980191/6ae1b657-0ff5-4e77-8797-47dbef843821"> |
 
 </br>
 
