@@ -94,12 +94,20 @@ Spatial data is too important to our collective future to let its collection and
 | :--- | :--- | :--- |
 | 2024 Q1 | ◻️ Establish connection to Solana </br> ◻️ Set up data storage </br> ◻️ Mint $MESH  </br> ◻️ Enable users to submits scans | ✅ FPS and tower defense core gameplay mechanics </br> ✅ Indoor VR using scans </br> ◻️ Web app for Solana and MeshMap integrations </br> ◻️ CityChamp tokens |
 | 2024 Q2 | ◻️ Set up pipeline for processing and optimization | ◻️ Outdoor AR </br> ◻️ More enemies, attacks, power ups, and locations </br> ◻️ Companions and reform points </br> ◻️ Player EXP leveling </br> ◻️ Achievements and daily quests </br> ◻️ Rating scans |
-| 2024 Q3 | ◻️ Allow users to download processed scans  </br> ◻️ Expand games/apps that integrate MeshMap | ◻️ Multiplayer and Alliance system </br> ◻️ Boss fights </br> ◻️ More enemies and companions </br> ◻️ In-game scanning opportunities </br> ◻️ Available on more devices/platforms |
-| 2024 Q4 | ◻️ Release a MeshMap Unity SDK | ◻️ Builder mode |
-
+| 2024 Q3 | ◻️ Allow users to download processed scans  </br> ◻️ Expand games/apps that integrate MeshMap | ◻️ Multiplayer and Alliance system </br> ◻️ Boss fights </br> ◻️ More enemies and companions </br> ◻️ In-game scanning opportunities </br> ◻️ Localization in Japanese, Spanish, Portuguese, Mandarin, and Korean |
+| 2024 Q4 | ◻️ Release a MeshMap Unity SDK | ◻️ Builder mode </br> ◻️ Available on more devices/platforms |
 
 </br>
 
-### 👓 Appendix
+### 🗃️ Asset credits 🎨
+
+- Several XR assets (e.g., camera rig, hands, interactables) are from the Meta XR Interaction SDK sample projects.
+- Enemy models were drafted by our team and designed in collaboration with Ukraine-based RetroStyle Games.
+- Enemy AI is programmed using behavior tree logic supported by Behavior Designer from the Unity Asset Store.
+- Particle systems and some SFX were purchased from Polygon Arsenal on the Unity Asset Store.
+
+</br>
+
+### 👓 Appendix 🔎
 
 Find out more about our studio's [related projects](https://www.spectracities.com/projects/) 🧰 and message us on our [Discord](https://discord.gg/aTSRjCaWvn) to get involved 🤝.
