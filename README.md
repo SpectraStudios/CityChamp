@@ -94,8 +94,9 @@ Spatial data is too important to our collective future to let its collection and
 | :--- | :--- | :--- |
 | 2024 Q1 | ◻️ Establish connection to Solana </br> ◻️ Set up data storage </br> ◻️ Enable users to submits scans | ✅ FPS and tower defense core gameplay mechanics </br> ✅ Indoor VR using scans </br> ✅ Outdoor AR in open areas (experimental) </br> ◻️ Web app for Solana and MeshMap integrations |
 | 2024 Q2 | ◻️ Mint $MESH </br> ◻️ Airdrop $MESH to players that submitted scans </br> ◻️ Set up pipeline for processing and optimization | ◻️ Outdoor AR </br> ◻️ More enemies, attacks, power ups, and locations </br> ◻️ Companions, single-use reformer items, and reform points </br> ◻️ Player EXP leveling </br> ◻️ Achievements and daily quests </br> ◻️ Rating scans |
-| 2024 Q3 | ◻️ Allow users to download processed scans  </br> ◻️ Expand games/apps that integrate MeshMap | ◻️ Multiplayer and Alliance system </br> ◻️ Boss fights </br> ◻️ More enemies and companions </br> ◻️ In-game scanning opportunities </br> ◻️ Localization in Japanese, Spanish, Portuguese, Mandarin, and Korean |
+| 2024 Q3 | ◻️ Allow users to download processed scans  </br> ◻️ Expand games and apps that integrate MeshMap | ◻️ Multiplayer and Alliance system </br> ◻️ Boss fights </br> ◻️ More enemies and companions </br> ◻️ In-game scanning opportunities </br> ◻️ Localization in Japanese, Spanish, Portuguese, Mandarin, and Korean |
 | 2024 Q4 | ◻️ Release a MeshMap Unity SDK | ◻️ Builder mode </br> ◻️ Available on more devices/platforms |
+| 2025 | ◻️ Local businesses partnership program | |
 
 </br>
 
