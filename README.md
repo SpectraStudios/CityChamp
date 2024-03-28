@@ -18,7 +18,7 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 #### For players 🎮: (outdoor AR or indoor VR, headset)
 
 1. Go to any location in your city (AR) or on the world map (VR) where a game level has been created.
-2. Choose the level that you want and pay a small amount in CityChamp tokens to play.
+2. Choose the level that you want to play and start.
 3. Beat the level by collecting all the reforms that spawn in the play area, while blasting enemies and defending the *city core* from damage. Pick up stat boosts to help you in your battle.
 4. Earn achievements and collectables for winning!
 
@@ -30,14 +30,14 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 
 1. Explore your local city to discover cool locations for AR content.
 2. Scan the areas using a mobile scanning app, such as Polycam, Luma AI, or Scaniverse.
-3. Send your scans to the MeshMap blockchain and earn tokens!
+3. Send your scans to the MeshMap blockchain to receive $MESH and other in-game items!
 4. Earn achievements and collectables for scanning new areas!
 
 #### (*coming soon!*) For builders 🛠️: (indoor VR, headset)
 
-1. Choose any scanned area and pay a small amount in CityChamp tokens to use it for your game level.
+1. Choose any scanned area and pay a small amount of $MESH to use it for your game level.
 2. Design the level by placing enemies, weapons, and stat boosts to spawn around the play area.
-3. Submit your level and earn CityChamp tokens every time someone plays it!
+3. Submit your level to receive $MESH every time someone plays it!
 
 </br>
 
@@ -47,20 +47,20 @@ City Champ is a mixed reality first-person combat, tower defense game developed 
 
 - Download the CityChamp.apk build.
 - Load it onto your Quest 2/3/Pro using [SideQuest](https://sidequestvr.com/setup-howto).
-- Launch the app and create a new City Champ player account!
-- Optional: Connect your Solana wallet or automatically generate a new wallet.*
+- Launch the app on Quest and create a new City Champ player account via the companion web app!*
+- Optional: Connect your Solana wallet or automatically generate a new wallet.**
 
-*Connecting a wallet is needed to submit scans to MeshMap and receive collectables.
+*Accounts are connected to email or phone number for 2FA rather than Meta accounts. This supports easily sharing devices between players.
+**Connecting a wallet is needed to submit scans to MeshMap and receive collectables.
 
 #### Gameplay loop 🔁
 
 - The game is split into two play modes: Outdoor AR and Indoor VR.
-- Go to any location in your city (AR) or on the world map (VR) where a game level has been created.
-- Spend CityChamp tokens to play levels.
-- Earn $MESH or CityChamp tokens for scanning and uploading mobile 3D scans of outdoor pedestrian-safe areas to the MeshMap blockchain. Scans and their original geotagged data are stored together.
-- (*coming soon!*) Earn $MESH or CityChamp tokens when your scans are used by others.
-- (*coming soon!*) Spend CityChamp tokens to use scans in your levels.
-- (*coming soon!*) Earn CityChamp tokens when your levels are played.
+- Go to any location in your city (AR) or on the world map (VR) where a game level has been created and select the one you want to play.
+- Receive $MESH and in-game items for scanning and uploading mobile 3D scans of outdoor pedestrian-safe areas to the MeshMap blockchain. Scans and their original geotagged data are stored together.
+- (*coming soon!*) Earn $MESH when your scans are used by others.
+- (*coming soon!*) Spend $MESH to use scans in your levels.
+- (*coming soon!*) Earn $MESH when your levels are played.
 
 #### Hand tracking 👉
 
@@ -92,8 +92,8 @@ Spatial data is too important to our collective future to let its collection and
 
 | | MeshMap | City Champ |
 | :--- | :--- | :--- |
-| 2024 Q1 | ◻️ Establish connection to Solana </br> ◻️ Set up data storage </br> ◻️ Mint $MESH  </br> ◻️ Enable users to submits scans | ✅ FPS and tower defense core gameplay mechanics </br> ✅ Indoor VR using scans </br> ◻️ Web app for Solana and MeshMap integrations </br> ◻️ CityChamp tokens |
-| 2024 Q2 | ◻️ Set up pipeline for processing and optimization | ◻️ Outdoor AR </br> ◻️ More enemies, attacks, power ups, and locations </br> ◻️ Companions and reform points </br> ◻️ Player EXP leveling </br> ◻️ Achievements and daily quests </br> ◻️ Rating scans |
+| 2024 Q1 | ◻️ Establish connection to Solana </br> ◻️ Set up data storage </br> ◻️ Enable users to submits scans | ✅ FPS and tower defense core gameplay mechanics </br> ✅ Indoor VR using scans </br> ✅ Outdoor AR in open areas (experimental) </br> ◻️ Web app for Solana and MeshMap integrations |
+| 2024 Q2 | ◻️ Mint $MESH </br> ◻️ Airdrop $MESH to players that submitted scans </br> ◻️ Set up pipeline for processing and optimization | ◻️ Outdoor AR </br> ◻️ More enemies, attacks, power ups, and locations </br> ◻️ Companions, single-use reformer items, and reform points </br> ◻️ Player EXP leveling </br> ◻️ Achievements and daily quests </br> ◻️ Rating scans |
 | 2024 Q3 | ◻️ Allow users to download processed scans  </br> ◻️ Expand games/apps that integrate MeshMap | ◻️ Multiplayer and Alliance system </br> ◻️ Boss fights </br> ◻️ More enemies and companions </br> ◻️ In-game scanning opportunities </br> ◻️ Localization in Japanese, Spanish, Portuguese, Mandarin, and Korean |
 | 2024 Q4 | ◻️ Release a MeshMap Unity SDK | ◻️ Builder mode </br> ◻️ Available on more devices/platforms |
 
