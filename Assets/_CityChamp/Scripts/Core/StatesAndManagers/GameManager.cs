@@ -11,8 +11,11 @@ namespace SpectraStudios.CityChamp
 
     public enum GameState
     {
+        Login,
+        CreateAccount,
+        ConnectWallet,
         SelectMode,
-        WorldMap,
+        MainMenu,
         Scan,
         ARLevel,
         VRLevel,
@@ -70,15 +73,29 @@ namespace SpectraStudios.CityChamp
             OnGameModeChanged?.Invoke(newGameMode);
         }
 
+        public void SelectOutdoorAR()
+        {
+            UpdateGameMode(GameMode.OutdoorAR);
+        }
+
+        public void SelectIndoorVR()
+        {
+            UpdateGameMode(GameMode.IndoorVR);
+        }
+
         public void UpdateGameState(GameState newGameState)
         {
             CurrentGameState = newGameState;
 
             switch (newGameState)
             {
+                case GameState.Login:
+                    break;
+                case GameState.CreateAccount:
+                    break;
                 case GameState.SelectMode:
                     break;
-                case GameState.WorldMap:
+                case GameState.MainMenu:
                     break;
                 case GameState.Scan:
                     break;

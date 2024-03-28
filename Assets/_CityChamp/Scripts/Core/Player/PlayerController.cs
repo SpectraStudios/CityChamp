@@ -29,10 +29,16 @@ namespace SpectraStudios.CityChamp
         {
             switch (currentGameState)
             {
+                case GameState.Login:
+                    _playerCombat.SetActive(false);
+                    break;
+                case GameState.CreateAccount:
+                    _playerCombat.SetActive(false);
+                    break;
                 case GameState.SelectMode:
                     _playerCombat.SetActive(false);
                     break;
-                case GameState.WorldMap:
+                case GameState.MainMenu:
                     _playerCombat.SetActive(false);
                     break;
                 case GameState.Scan:
